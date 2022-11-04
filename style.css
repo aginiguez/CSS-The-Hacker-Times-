@@ -1,81 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
- h1 {
-    font-family: 'Abril Fatface';
-    text-align: center;
-  }
-  
+h1 {
+  font-family: 'Abril Fatface';
+  text-align: center;
+  font-size: 3.5em;
+  margin: 25px;
+}
  body {
-    background-color: #ddd;
+    background-color: ghostwhite;
+    font-family: 'Source Sans Pro';
+    margin: 10em 15em;
   }
-  ul {
+ul {
     list-style-type: none;
     text-align: center;
-    border-bottom: 1px solid #777;
-    border-top: 1px solid #777;
-    padding: 8px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 12px;
+    display: flex;
+    border: #ddd 1px solid;
+    border-left: none;
+    border-right: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    flex-wrap: wrap;
   }
-  nav li a {
+  li a {
     text-decoration: none;
     text-align: center;
     display: inline;
-    color: #777;
+    color: #26a7de;
     font-family: 'Roboto Slab';
     font-size: 0.8em;
-    padding-left: 0.3em;
+    padding-left: 0.8em;
   }
-  
-  .navbar {
-    position: sticky;
-    top: 0;
-    background-color: white;
-  }
-  
   .newspaper-container {
     width: 700px;
     border-radius: 30px;
     box-shadow: 10px 10px 10px #ddd;
-    padding: 30px;
+    padding: 10px;
     margin: auto;
     background-color: white;
   }
-  
-  main h2 {
+  h2 {
     font-family: 'Roboto Slab';
+    color: #26a7de
+    margin-bottom: 0.75em;
   }
-  
-  main img {
-    width: 100%;
-  }
-  
-  main p {
-    font-family: 'Source Sans Pro';
-    color: #777;
-    margin-left: 0.5em;
-    margin-right: 0.4em;
-  }
-  
-  main h5 {
-    color: red;
-  }
-  main img {
-    width: 100%;
-  }
-  
-  /* SMALLER ARTICLES */
-  .more-articles {
-    border-top: 1px solid #eee;
-    margin-top: 1.5em;
-    text-align: center;
-  }
-  .more-articles section {
-    display: inline-block;
-    width: 44%;
-    margin: 0 1em;
-  }
-  .more-articles img {
-    width: 100%;
-  }
-  .more-articles h4 {
-    font-family: 'Roboto Slab';
-    text-align: left;
-  }
+li {
+  justify-content: space-around;
+  list-style: none;
+  margin: auto;
+  padding: 1em;
+}
+li a:hover {
+  color: black;
+  transition: ease-in-out;
+}
+main h4 {
+  font-size: 1.5em;
+  color: #26a7de
+  font-family: 'Roboto Slab';
+}
+h5 {
+  font-family: 'Abril Fatface';
+  color: #DD3232;
+  font-size: 0.8em;
+}
+
+main {
+  border-bottom: #ddd 1px solid;
+  margin: 2rem 1rem;
+  padding: 0.25rem 0;
+}
+main>img {
+  width: 100%;
+  display: block;
+}
+
+.more-articles {
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  font-size: 1.2rem;
+  padding: 0 0.7em;
+  font-family: Source Sans Pro;
+}
